@@ -87,6 +87,23 @@ body {
 @import "home.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 .title {
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 65px;
+   @include adaptiv-font(50, 28);
+   @media (min-width: $mw + px) {
+      font-size: 50 + px;
+   }
+   @media (max-width: $md1+px) {
+      line-height: 45px;
+   }
+   @media (max-width: $md2+px) {
+      line-height: 40px;
+   }
+   @media (max-width: $md4+px) {
+      line-height: 1;
+   }
 }
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
@@ -189,69 +206,117 @@ body {
 //====================================================================================================
 .about {
    padding: 70px 0px 70px 0px;
+   border: 1px solid red;
+   @media (max-width: $md2+px) {
+      padding: 30px 0px 30px 0px;
+   }
+   @media (max-width: $md3+px) {
+      padding: 30px 0px 0px 0px;
+   }
+
    &__row {
       @include flexbox();
-      margin: 70px 0px 0px -35px;
-      border: 1px solid red;
+      margin: 40px 0px 0px -35px;
+      @media (max-width: $md3+px) {
+         flex-wrap: wrap;
+         margin: 10px 0px 0px -35px;
+      }
       &_rev {
          flex-direction: row-reverse;
       }
    }
    &__column {
       padding: 0px 0px 0px 35px;
+      flex: 0 0 50%;
+      @media (max-width: $md3+px) {
+         flex: 1 1 100%;
+      }
       &_1 {
-         // order: 1;
-         flex: 0 0 50%;
-         // border: 1px solid green;
+         height: 100%;
+         @media (max-width: $md3+px) {
+            @include flexorder(2);
+         }
       }
       &_2 {
-         // order: 2;
-         flex: 0 0 50%;
-         // padding: 0px 0px 0px 35px;
-         border-radius: 5px;
+         @media (max-width: $md3+px) {
+            margin: 0px 0px 30px 0px;
+            @include flexorder(1);
+         }
       }
    }
 
    &__item {
+      @media (max-width: $md2+px) {
+         text-align: center;
       }
-   
+   }
+
    &__image {
       height: 100%;
-      border-radius: 5px;
+      border-radius: 10px;
       overflow: hidden;
+      @media (max-width: $md3+px) {
+         padding: 0px 0px 120% 0px;
+      }
    }
 }
 .item-about {
-   border: 1px solid black;
-
+   // border: 1px solid black;
    &__rev {
       padding: 0px 0px 0px 100px;
+      @media (max-width: $md2+px) {
+         padding: 0;
+         text-align: center;
+      }
    }
    &__title {
-      max-width: 460px;
-      font-family: Raleway;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 50px;
-      line-height: 65px;
       margin: 0px 0px 42px 0px;
       color: #343a40;
+      @media (max-width: $md1+px) {
+         margin: 0px 0px 25px 0px;
+      }
    }
+
    &__text {
-      padding: 0px 100px 0px  0px;
+      max-width: 460px;
+      padding: 0px 100px 0px 0px;
       font-family: Raleway;
       font-style: normal;
       font-weight: normal;
-      font-size: 20px;
       line-height: 36px;
-      letter-spacing: 0.05em;
       color: #343a40;
       margin: 0px 0px 100px 0px;
+      @include adaptiv-font(20, 16);
+      @media (min-width: $mw + px) {
+         font-size: 20px;
+      }
+      &_1 {
+         padding: 0;
+      }
+      @media (max-width: $md1+px) {
+         line-height: 25px;
+         margin: 0px 0px 50px 0px;
+      }
+      @media (max-width: $md2+px) {
+         line-height: 25px;
+         padding: 0;
+      }
+      @media (max-width: $md3+px) {
+         max-width: 100%;
+      }
+      @media (max-width: $md4+px) {
+      }
    }
    &__link {
       color: #1f8bff;
       text-decoration: underline;
       cursor: pointer;
+   }
+   &__btn {
+      @media (max-width: $md2+px) {
+         padding: 10px 60px;
+         font-size: 17px;
+      }
    }
 }
 
@@ -262,8 +327,10 @@ body {
       font-family: Raleway;
       font-style: normal;
       font-weight: 600;
-      // font-size: 50px;
       @include adaptiv-font(50, 28);
+      @media (min-width: $mw + px) {
+         font-size: 50 + px;
+      }
       line-height: 130%;
       text-align: center;
       margin: 0px 0px 60px 0px;
@@ -291,7 +358,7 @@ body {
       }
    }
    &__card {
-      border-radius: 5px;
+      // border-radius: 10px;
       margin: 0px 0px 30px 0px;
       position: relative;
    }
@@ -299,7 +366,8 @@ body {
 .card-tours {
    &__image {
       height: 400px;
-      border-radius: 5px 5px 5px 5px;
+      border-radius: 10px;
+      overflow: hidden;
       &_big {
          height: 830px;
       }
