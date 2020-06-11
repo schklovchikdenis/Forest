@@ -322,7 +322,11 @@ body {
 
 //====================================================================================================
 .tours {
-   padding: 70px 0px 110px 0px;
+   padding: 70px 0px 80px 0px;
+   // border: 2px solid red;
+   @media (max-width: $md3+px) {
+      padding: 35px 0px 40px 0px;
+   }
    &__title {
       font-family: Raleway;
       font-style: normal;
@@ -331,9 +335,12 @@ body {
       @media (min-width: $mw + px) {
          font-size: 50 + px;
       }
-      line-height: 130%;
+      // line-height: 130%;
       text-align: center;
       margin: 0px 0px 60px 0px;
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 25px 0px;
+      }
    }
 
    &__wrapper {
@@ -341,18 +348,45 @@ body {
       flex-wrap: wrap;
    }
    &__row {
-      border: 2px solid red;
+      // border: 2px solid red;
       flex: 1 1 100%;
       display: flex;
       flex-wrap: wrap;
-      margin-left: -20px;
+      margin-left: -30px;
+      @media (max-width: $md2+px) {
+         margin-left: -15px;
+      }
+      @media (max-width: $md3+px) {
+         margin-left: -10px;
+      }
    }
    &__column {
-      padding-left: 20px;
-      flex: 0 0 50%;
-      border: 1px solid blue;
-      &_1 {
-         padding: 0px 0px 30px 20px;
+      padding-left: 30px;
+      flex: 1 1 50%;
+      &_sm {
+         flex: 1 1 33%;
+      }
+      &_lg {
+         // flex: 1 1 40%;
+      }
+      @media (max-width: $md2+px) {
+         padding-left: 15px;
+      }
+      @media (max-width: $md3+px) {
+         padding-left: 10px;
+      }
+      @media (max-width: 570px) {
+         flex-wrap: wrap;
+         flex: 1 1 100%;
+      }
+      &_big {
+         padding: 0px 0px 30px 30px;
+         @media (max-width: $md2+px) {
+            padding: 0px 0px 15px 15px;
+         }
+         @media (max-width: $md3+px) {
+            padding: 0px 0px 10px 10px;
+         }
       }
    }
 
@@ -361,7 +395,12 @@ body {
       border-radius: 0 0 5px 5px;
       overflow: hidden;
       margin: 0px 0px 30px 0px;
-
+      @media (max-width: $md2+px) {
+         margin: 0px 0px 15px 0px;
+      }
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 10px 0px;
+      }
       &_1 {
          height: 100%;
       }
@@ -369,23 +408,41 @@ body {
 }
 .card-tours {
    &__image {
-      padding-bottom: 65%;
+      padding-bottom: 66%;
+      @media (max-width: 570px) {
+         padding-bottom: 70%;
+      }
+      &_sm {
+         padding-bottom: 80.5%;
+         @media (max-width: 570px) {
+            padding-bottom: 70%;
+         }
+      }
+      &_lg {
+         padding-bottom: 56%;
+         @media (max-width: 570px) {
+            padding-bottom: 70%;
+         }
+      }
       &_big {
          height: 100%;
+         @media (max-width: 570px) {
+            padding-bottom: 100%;
+         }
       }
    }
    &__title {
       position: absolute;
       bottom: 0;
       width: 100%;
-      font-family: Raleway;
-      font-style: normal;
-      color: #fff;
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 130%;
-      // border-radius: 0px 0px 20px 20px;
       padding: 15px 0px 15px 40px;
+      @media (max-width: $md3+px) {
+         padding: 10px 0px 10px 40px;
+      }
+      @media (max-width: 680px) {
+         padding: 10px 0px 10px 0px;
+         text-align: center;
+      }
       &_1 {
          background: #9c9c9c;
       }
@@ -401,6 +458,16 @@ body {
       &_5 {
          background: #506d4d;
       }
+   }
+   &__link {
+      font-family: Raleway;
+      font-style: normal;
+      color: #fff;
+      font-weight: 600;
+      font-size: 30px;
+      @include adaptiv-font(30, 18);
+      // line-height: 130%;
+      cursor: pointer;
    }
 }
 
