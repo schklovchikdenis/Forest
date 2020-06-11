@@ -1134,7 +1134,6 @@ body.ie .ibg img {
 
 .about {
   padding: 70px 0px 70px 0px;
-  border: 1px solid red;
 }
 
 .about__row {
@@ -1214,57 +1213,57 @@ body.ie .ibg img {
   margin: 0px 0px 60px 0px;
 }
 
-.tours__row {
+.tours__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
-  margin-left: -30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
+.tours__row {
+  border: 2px solid red;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -20px;
+}
+
 .tours__column {
-  padding-left: 30px;
+  padding-left: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  border: 1px solid blue;
 }
 
 .tours__column_1 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 41.6%;
-          flex: 0 1 41.6%;
-}
-
-.tours__column_2 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 58%;
-          flex: 0 1 58%;
-}
-
-.tours__column_3 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-}
-
-.tours__column_4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+  padding: 0px 0px 30px 20px;
 }
 
 .tours__card {
-  margin: 0px 0px 30px 0px;
   position: relative;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  margin: 0px 0px 30px 0px;
+}
+
+.tours__card_1 {
+  height: 100%;
 }
 
 .card-tours__image {
-  height: 400px;
-  border-radius: 10px;
-  overflow: hidden;
+  padding-bottom: 65%;
 }
 
 .card-tours__image_big {
-  height: 830px;
+  height: 100%;
 }
 
 .card-tours__title {
@@ -1277,7 +1276,6 @@ body.ie .ibg img {
   font-weight: 600;
   font-size: 30px;
   line-height: 130%;
-  border-radius: 0px 0px 5px 5px;
   padding: 15px 0px 15px 40px;
 }
 
