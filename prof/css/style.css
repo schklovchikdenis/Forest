@@ -1262,7 +1262,7 @@ body.ie .ibg img {
 }
 
 .card-tours__image {
-  padding-bottom: 66%;
+  padding-bottom: 73%;
 }
 
 .card-tours__image_sm {
@@ -1347,7 +1347,7 @@ body.ie .ibg img {
 
   .item-about__text {
     line-height: 25px;
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 30px 0px;
   }
 }
 
@@ -1513,10 +1513,11 @@ body.ie .ibg img {
 
   .item-about__text {
     max-width: 100%;
+    margin: 0px 0px 25px 0px;
   }
 
   .tours {
-    padding: 35px 0px 40px 0px;
+    padding: 0px 0px 30px 0px;
   }
 
   .tours__title {
@@ -1560,20 +1561,21 @@ body.ie .ibg img {
             flex: 1 1 100%;
   }
 
-  .card-tours__image {
-    padding-bottom: 70%;
-  }
-
   .card-tours__image_sm {
-    padding-bottom: 70%;
+    padding-bottom: 73%;
   }
 
   .card-tours__image_lg {
-    padding-bottom: 70%;
+    padding-bottom: 73%;
   }
 
   .card-tours__image_big {
-    padding-bottom: 100%;
+    padding-bottom: 70%;
+  }
+
+  .card-tours__image_big img {
+    -o-object-position: bottom;
+       object-position: bottom;
   }
 }
 
