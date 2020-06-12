@@ -1199,11 +1199,13 @@ body.ie .ibg img {
   cursor: pointer;
 }
 
-.tours {
+.tours,
+.gall {
   padding: 70px 0px 80px 0px;
 }
 
-.tours__title {
+.tours__title,
+.gall__title {
   font-family: Raleway;
   font-style: normal;
   font-weight: 600;
@@ -1212,7 +1214,7 @@ body.ie .ibg img {
   margin: 0px 0px 60px 0px;
 }
 
-.tours__wrapper {
+.foto-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1221,7 +1223,7 @@ body.ie .ibg img {
       flex-wrap: wrap;
 }
 
-.tours__row {
+.foto-row {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
@@ -1233,78 +1235,82 @@ body.ie .ibg img {
   margin-left: -30px;
 }
 
-.tours__column {
+.foto-column {
   padding-left: 30px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
 }
 
-.tours__column_sm {
+.foto-column__sm {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33%;
           flex: 1 1 33%;
 }
 
-.tours__column_big {
+.foto-column__big {
   padding: 0px 0px 30px 30px;
 }
 
-.tours__card {
+.foto-card {
   position: relative;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   overflow: hidden;
   margin: 0px 0px 30px 0px;
 }
 
-.tours__card_1 {
+.foto-card_big {
   height: 100%;
 }
 
-.card-tours__image {
-  padding-bottom: 73%;
+.card-foto__image {
+  padding-bottom: 66.0%;
 }
 
-.card-tours__image_sm {
+.card-foto__image_sm {
   padding-bottom: 80.5%;
 }
 
-.card-tours__image_lg {
-  padding-bottom: 56%;
+.card-foto__image_lg {
+  padding-bottom: 56.042%;
 }
 
-.card-tours__image_big {
+.card-foto__image_big {
   height: 100%;
 }
 
-.card-tours__title {
+.card-foto__image_full {
+  padding-bottom: 32%;
+}
+
+.card-foto__title {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 15px 0px 15px 40px;
 }
 
-.card-tours__title_1 {
+.card-foto__title_1 {
   background: #9c9c9c;
 }
 
-.card-tours__title_2 {
+.card-foto__title_2 {
   background: #b9a38c;
 }
 
-.card-tours__title_3 {
+.card-foto__title_3 {
   background: #519c95;
 }
 
-.card-tours__title_4 {
+.card-foto__title_4 {
   background: #573c2c;
 }
 
-.card-tours__title_5 {
+.card-foto__title_5 {
   background: #506d4d;
 }
 
-.card-tours__link {
+.card-foto__link {
   font-family: Raleway;
   font-style: normal;
   color: #fff;
@@ -1323,7 +1329,8 @@ body.ie .ibg img {
     font-size: 20px;
   }
 
-  .tours__title {
+  .tours__title,
+  .gall__title {
     font-size: 50px;
   }
 }
@@ -1401,19 +1408,19 @@ body.ie .ibg img {
     font-size: 17px;
   }
 
-  .tours__row {
+  .foto-row {
     margin-left: -15px;
   }
 
-  .tours__column {
+  .foto-column {
     padding-left: 15px;
   }
 
-  .tours__column_big {
+  .foto-column__big {
     padding: 0px 0px 15px 15px;
   }
 
-  .tours__card {
+  .foto-card {
     margin: 0px 0px 15px 0px;
   }
 }
@@ -1516,44 +1523,46 @@ body.ie .ibg img {
     margin: 0px 0px 25px 0px;
   }
 
-  .tours {
+  .tours,
+  .gall {
     padding: 0px 0px 30px 0px;
   }
 
-  .tours__title {
+  .tours__title,
+  .gall__title {
     margin: 0px 0px 25px 0px;
   }
 
-  .tours__row {
+  .foto-row {
     margin-left: -10px;
   }
 
-  .tours__column {
+  .foto-column {
     padding-left: 10px;
   }
 
-  .tours__column_big {
+  .foto-column__big {
     padding: 0px 0px 10px 10px;
   }
 
-  .tours__card {
+  .foto-card {
     margin: 0px 0px 10px 0px;
   }
 
-  .card-tours__title {
+  .card-foto__title {
     padding: 10px 0px 10px 40px;
   }
 }
 
 @media (max-width: 680px) {
-  .card-tours__title {
+  .card-foto__title {
     padding: 10px 0px 10px 0px;
     text-align: center;
   }
 }
 
 @media (max-width: 570px) {
-  .tours__column {
+  .foto-column {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-flex: 1;
@@ -1561,19 +1570,19 @@ body.ie .ibg img {
             flex: 1 1 100%;
   }
 
-  .card-tours__image_sm {
+  .card-foto__image_sm {
     padding-bottom: 73%;
   }
 
-  .card-tours__image_lg {
+  .card-foto__image_lg {
     padding-bottom: 73%;
   }
 
-  .card-tours__image_big {
-    padding-bottom: 70%;
+  .card-foto__image_big {
+    padding-bottom: 64.2%;
   }
 
-  .card-tours__image_big img {
+  .card-foto__image_big img {
     -o-object-position: bottom;
        object-position: bottom;
   }

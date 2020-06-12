@@ -322,7 +322,8 @@ body {
 }
 
 //====================================================================================================
-.tours {
+.tours,
+.gall {
    padding: 70px 0px 80px 0px;
    // border: 2px solid red;
    @media (max-width: $md3+px) {
@@ -343,12 +344,13 @@ body {
          margin: 0px 0px 25px 0px;
       }
    }
-
-   &__wrapper {
+}
+.foto {
+   &-wrapper {
       @include flexbox();
       flex-wrap: wrap;
    }
-   &__row {
+   &-row {
       // border: 2px solid red;
       flex: 1 1 100%;
       display: flex;
@@ -361,14 +363,11 @@ body {
          margin-left: -10px;
       }
    }
-   &__column {
+   &-column {
       padding-left: 30px;
       flex: 1 1 50%;
-      &_sm {
+      &__sm {
          flex: 1 1 33%;
-      }
-      &_lg {
-         // flex: 1 1 40%;
       }
       @media (max-width: $md2+px) {
          padding-left: 15px;
@@ -380,7 +379,7 @@ body {
          flex-wrap: wrap;
          flex: 1 1 100%;
       }
-      &_big {
+      &__big {
          padding: 0px 0px 30px 30px;
          @media (max-width: $md2+px) {
             padding: 0px 0px 15px 15px;
@@ -391,9 +390,9 @@ body {
       }
    }
 
-   &__card {
+   &-card {
       position: relative;
-      border-radius: 0 0 5px 5px;
+      border-radius: 5px 5px 5px 5px;
       overflow: hidden;
       margin: 0px 0px 30px 0px;
       @media (max-width: $md2+px) {
@@ -402,14 +401,14 @@ body {
       @media (max-width: $md3+px) {
          margin: 0px 0px 10px 0px;
       }
-      &_1 {
+      &_big {
          height: 100%;
       }
    }
 }
-.card-tours {
+.card-foto {
    &__image {
-      padding-bottom: 73%;
+      padding-bottom: 66.0%;
       // @media (max-width: 570px) {
       //    padding-bottom: 70%;
       // }
@@ -420,7 +419,7 @@ body {
          }
       }
       &_lg {
-         padding-bottom: 56%;
+         padding-bottom: 56.042%;
          @media (max-width: 570px) {
             padding-bottom: 73%;
          }
@@ -428,11 +427,14 @@ body {
       &_big {
          height: 100%;
          @media (max-width: 570px) {
-            padding-bottom: 70%;
-            img{
+            padding-bottom: 64.2%;
+            img {
                object-position: bottom;
             }
          }
+      }
+      &_full {
+         padding-bottom: 32%;
       }
    }
    &__title {
@@ -472,7 +474,6 @@ body {
       @include adaptiv-font(30, 18);
       // line-height: 130%;
       cursor: pointer;
-      
    }
 }
 
