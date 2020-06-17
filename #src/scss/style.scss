@@ -48,7 +48,7 @@ body {
    &.loaded {
    }
 }
-//</ОБОЛОЧКА>===========================================================================================================
+// </ОБОЛОЧКА>===========================================================================================================
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 .container {
@@ -347,15 +347,13 @@ body {
 }
 .foto {
    &-wrapper {
-      @include flexbox();
-      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
    }
    &-row {
-      // border: 2px solid red;
-      flex: 1 1 100%;
       display: flex;
-      flex-wrap: wrap;
       margin-left: -30px;
+      flex-wrap: wrap;
       @media (max-width: $md2+px) {
          margin-left: -15px;
       }
@@ -366,7 +364,7 @@ body {
    &-column {
       padding-left: 30px;
       flex: 1 1 50%;
-      &__sm {
+      &__1 {
          flex: 1 1 33%;
       }
       @media (max-width: $md2+px) {
@@ -377,9 +375,9 @@ body {
       }
       @media (max-width: 570px) {
          flex-wrap: wrap;
-         flex: 1 1 100%;
+         flex: 1 0 100%;
       }
-      &__big {
+      &__3 {
          padding: 0px 0px 30px 30px;
          @media (max-width: $md2+px) {
             padding: 0px 0px 15px 15px;
@@ -387,6 +385,9 @@ body {
          @media (max-width: $md3+px) {
             padding: 0px 0px 10px 10px;
          }
+      }
+      &__5 {
+         flex: 0 1 200px;
       }
    }
 
@@ -401,30 +402,29 @@ body {
       @media (max-width: $md3+px) {
          margin: 0px 0px 10px 0px;
       }
-      &_big {
+      &_3 {
          height: 100%;
+      }
+      &_4 {
       }
    }
 }
 .card-foto {
    &__image {
-      padding-bottom: 66.0%;
-      // @media (max-width: 570px) {
-      //    padding-bottom: 70%;
-      // }
-      &_sm {
+      padding-bottom: 66%;
+      &_1 {
          padding-bottom: 80.5%;
          @media (max-width: 570px) {
             padding-bottom: 73%;
          }
       }
-      &_lg {
+      &_2 {
          padding-bottom: 56.042%;
          @media (max-width: 570px) {
             padding-bottom: 73%;
          }
       }
-      &_big {
+      &_3 {
          height: 100%;
          @media (max-width: 570px) {
             padding-bottom: 64.2%;
@@ -433,7 +433,7 @@ body {
             }
          }
       }
-      &_full {
+      &_4 {
          padding-bottom: 32%;
       }
    }
@@ -479,3 +479,33 @@ body {
 
 //====================================================================================================
 //</ОСНОВНОЙ БЛОК>====================================================================================================
+.block {
+   display: flex;
+   border: 10px solid #010005;
+   flex-direction: column;
+}
+.block__row {
+   // border: 10px solid #b40f17;
+   display: flex;
+   margin-left: -30px;
+}
+.block__column {
+   border: 5px solid #4108aa;
+   flex: 0 1 50%;
+   padding-left: 30px;
+
+   &_1 {
+      flex: 1 1 100%;
+   }
+}
+.block__content {
+   background-color: #18b5a4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &_1 {
+      font-size: 20px;
+      padding: 100px 20px;
+      margin: 10px 0px 10px 0px;
+   }
+}
