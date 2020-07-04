@@ -1005,6 +1005,58 @@ body.ie .ibg img {
   margin: 0px 0px 0px 30px;
 }
 
+.footer {
+  background: url(../img/bg-footer.png) center/cover no-repeat;
+  padding: 60px 0px 130px 0px;
+  color: #fff;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -128px;
+}
+
+.footer__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding-left: 128px;
+}
+
+.footer__logo {
+  font-family: Courgette;
+  font-size: 30px;
+  line-height: 37px;
+  margin: 0px 0px 7px 0px;
+}
+
+.footer__text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer__title {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  margin: 0px 0px 7px 0px;
+}
+
+.footer li > a {
+  color: #fff;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
+}
+
 .title {
   font-family: Raleway;
   font-style: normal;
@@ -1337,57 +1389,6 @@ body.ie .ibg img {
   cursor: pointer;
 }
 
-.block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 10px solid #010005;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.block__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -30px;
-}
-
-.block__column {
-  border: 5px solid #4108aa;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  padding-left: 30px;
-}
-
-.block__column_1 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-}
-
-.block__content {
-  background-color: #18b5a4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.block__content_1 {
-  font-size: 20px;
-  padding: 100px 20px;
-  margin: 10px 0px 10px 0px;
-}
-
 @media (min-width: 1150px) {
   .title {
     font-size: 50px;
@@ -1682,5 +1683,7 @@ body.ie .ibg img {
 .webp .check.active:before{ background: url(../img/icons/check.webp) center no-repeat; }
 
 .webp .option.active:before{ background: url(../img/icons/option.webp) center no-repeat; }
+
+.webp .footer{ background: url(../img/bg-footer.webp) center/cover no-repeat; }
 
 .webp .fullscreen{ background: url(../img/bg.webp) center/cover no-repeat; }

@@ -1,5 +1,48 @@
-footer{}
-//====================================================================================================
+.footer {
+   background: url(../img/bg-footer.png) center/cover no-repeat;
+   padding: 60px 0px 130px 0px;
+   color: #fff;
+   &__row {
+      display: flex;
+      margin-left: -128px;
+      // flex-wrap: wrap;
+   }
+   &__column {
+      flex: 1 1 25%;
+      padding-left: 128px;
+      // flex-direction: column;
+   }
+   &__logo {
+      font-family: Courgette;
+      font-size: 30px;
+      line-height: 37px;
+      margin: 0px 0px 7px 0px;
+   }
 
-//====================================================================================================
-
+   &__text {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;   
+   }
+   &__title {
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 29px;
+      margin: 0px 0px 7px 0px;
+   }
+   &__nav {
+   }
+   &__list {
+   }
+   li > a {
+      color: #fff;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 38px;
+   }
+}
