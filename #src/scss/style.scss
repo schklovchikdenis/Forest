@@ -364,8 +364,27 @@ body {
    &-column {
       padding-left: 30px;
       flex: 1 1 50%;
-      &__1 {
+      &_1 {
          flex: 1 1 33%;
+      }
+      &_3 {
+         padding: 0px 0px 30px 30px;
+         @media (max-width: $md2+px) {
+            padding: 0px 0px 15px 15px;
+         }
+         @media (max-width: $md3+px) {
+            padding: 0px 0px 10px 10px;
+         }
+      }
+      &_4 {
+         flex: 1 1 16.5%;
+         padding: 0px 0px 30px 30px;
+         @media (max-width: $md2+px) {
+            padding: 0px 0px 15px 15px;
+         }
+         @media (max-width: $md3+px) {
+            padding: 0px 0px 10px 10px;
+         }
       }
       @media (max-width: $md2+px) {
          padding-left: 15px;
@@ -377,25 +396,7 @@ body {
          flex-wrap: wrap;
          flex: 1 0 100%;
       }
-      &__3 {
-         padding: 0px 0px 30px 30px;
-         @media (max-width: $md2+px) {
-            padding: 0px 0px 15px 15px;
-         }
-         @media (max-width: $md3+px) {
-            padding: 0px 0px 10px 10px;
-         }
-      }
-      &__4 {
-         flex: 1 1 16.5%;
-         padding: 0px 0px 30px 30px;
-         @media (max-width: $md2+px) {
-            padding: 0px 0px 15px 15px;
-         }
-         @media (max-width: $md3+px) {
-            padding: 0px 0px 10px 10px;
-         }
-      }
+
    }
 
    &-card {
@@ -448,6 +449,9 @@ body {
       }
       &_6{
          padding-bottom: 44%;
+      }
+      &_7{
+         padding-bottom: 14%;
       }
    }
    &__title {
