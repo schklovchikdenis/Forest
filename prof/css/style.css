@@ -1037,7 +1037,20 @@ body.ie .ibg img {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background-color: #465e43;
+  background: url(../img/bg-header.png) center/cover no-repeat;
+}
+
+.header2 {
+  content: "";
+  position: fixed;
+  width: 100%;
+  padding: 10px 10px;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: url(../img/bg-header.png) center/cover no-repeat;
 }
 
 .menu {
@@ -1119,12 +1132,14 @@ body.ie .ibg img {
   line-height: 19px;
 }
 
-.footer__title {
+.footer__title,
+.footer .info {
   font-family: Raleway;
   font-weight: 600;
   font-size: 25px;
   line-height: 29px;
   margin: 0px 0px 7px 0px;
+  color: #fff;
 }
 
 .footer li > a {
@@ -1468,6 +1483,11 @@ body.ie .ibg img {
   cursor: pointer;
 }
 
+.info {
+  padding: 60px 60px;
+  height: 500px;
+}
+
 @media (min-width: 1150px) {
   .title {
     font-size: 50px;
@@ -1486,6 +1506,14 @@ body.ie .ibg img {
 @media (max-width: 1162px) {
   .container {
     max-width: 970px;
+  }
+
+  .footer__row {
+    margin-left: -50px;
+  }
+
+  .footer__column {
+    padding-left: 50px;
   }
 
   .title {
@@ -1514,6 +1542,20 @@ body.ie .ibg img {
   .btn {
     padding: 12px 50px;
     font-size: 20px;
+  }
+
+  .footer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-left: 0px;
+    margin: 0px 0px 20px 0px;
   }
 
   .title {
@@ -1764,6 +1806,10 @@ body.ie .ibg img {
 .webp .option.active:before{ background: url(../img/icons/option.webp) center no-repeat; }
 
 .webp .popup-close{ background: url(../img/icons/close.webp) 0 0 no-repeat; }
+
+.webp .header.fixed:before{ background: url(../img/bg-header.webp) center/cover no-repeat; }
+
+.webp .header2{ background: url(../img/bg-header.webp) center/cover no-repeat; }
 
 .webp .footer{ background: url(../img/bg-footer.webp) center/cover no-repeat; }
 

@@ -5,12 +5,27 @@
    &__row {
       display: flex;
       margin-left: -128px;
-      // flex-wrap: wrap;
+      @media (max-width: $md1+px) {
+         margin-left: -50px;
+      }
+      @media (max-width: $md2+px) {
+         flex-wrap: wrap;
+         text-align: center;
+      }
    }
    &__column {
       flex: 1 1 25%;
       padding-left: 128px;
-      // flex-direction: column;
+      @media (max-width: $md1+px) {
+         padding-left: 50px;
+      }
+      @media (max-width:$md2+px){
+         flex: 0 1 100%;
+         padding-left: 0px;
+         margin: 0px 0px 20px 0px;
+
+      }
+      
    }
    &__logo {
       font-family: Courgette;
@@ -24,14 +39,16 @@
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
-      line-height: 19px;   
+      line-height: 19px;
    }
-   &__title {
+   &__title,
+   .info {
       font-family: Raleway;
       font-weight: 600;
       font-size: 25px;
       line-height: 29px;
       margin: 0px 0px 7px 0px;
+      color: #fff;
    }
    &__nav {
    }
