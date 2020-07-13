@@ -171,6 +171,18 @@ body.lock {
   width: 100%;
 }
 
+.form-info {
+  min-width: 500px;
+  border: 1px solid red;
+}
+
+.form-info__item {
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +224,12 @@ body.lock {
 
 .btn.fw {
   width: 100%;
+}
+
+.form__btn {
+  font-size: 16px;
+  padding: 10px 30px;
+  margin: 0 auto;
 }
 
 .select-block {
@@ -317,6 +335,10 @@ textarea {
   width: 100%;
   display: block;
   padding: 0px 20px;
+}
+
+.input.err {
+  border: 1px solid red;
 }
 
 textarea.input {
@@ -1484,8 +1506,62 @@ body.ie .ibg img {
 }
 
 .info {
-  padding: 60px 60px;
+  padding: 110px 60px;
   height: 500px;
+}
+
+.info__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__column_1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+}
+
+.info__title {
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0px 0px 7px 0px;
+  color: black;
+}
+
+.info__navitem {
+  margin-bottom: 10px;
+  color: black;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.tab__navitem {
+  cursor: pointer;
+}
+
+.item-info__title {
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0px 0px 7px 0px;
+  color: black;
+}
+
+.item-info__text {
+  margin-bottom: 10px;
+  color: black;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
 }
 
 @media (min-width: 1150px) {

@@ -396,7 +396,6 @@ body {
          flex-wrap: wrap;
          flex: 1 0 100%;
       }
-
    }
 
    &-card {
@@ -447,10 +446,10 @@ body {
       &_5 {
          padding-bottom: 48.9%;
       }
-      &_6{
+      &_6 {
          padding-bottom: 44%;
       }
-      &_7{
+      &_7 {
          padding-bottom: 14%;
       }
    }
@@ -497,27 +496,76 @@ body {
 //====================================================================================================
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 .info {
-   padding: 60px 60px;
+   padding: 110px 60px;
    height: 500px;
-   &__row {}
-   &__nav {}
-   &__navitem {}
-   &__link {}
-   &__items {}
-   &__item {}
-   &__title {}
-   &__text {}
-   &__img {}
+   &__row {
+      display: flex;
+   }
+   &__column_1 {
+      flex: 0 0 200px;
+   }
+   &__title {
+      margin-bottom: 20px;
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 25px;
+      // line-height: 29px;
+      margin: 0px 0px 7px 0px;
+      color: rgb(0, 0, 0);
+   }
+   &__nav {
+   }
+   &__navitem {
+      margin-bottom: 10px;
+      color: rgb(0, 0, 0);
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 38px;
+   }
+   &__link {
+    
+   }
+   &__items {
+   }
+   &__item {
+   }
+   &__title {
+   }
+   &__text {
+   }
+   &__img {
+   }
 }
 .tabs {
 }
 .container {
 }
 .tab {
-   &__navitem {}
-   &__item {}
+   &__navitem {
+      cursor: pointer;
+   }
+   &__item {
+   }
 }
-.pl {
-}
-.ibg {
+.item-info {
+   &__title {
+      margin-bottom: 20px;
+      font-family: Raleway;
+      font-weight: 600;
+      font-size: 25px;
+      // line-height: 29px;
+      margin: 0px 0px 7px 0px;
+      color: rgb(0, 0, 0);
+   }
+   &__text {
+      margin-bottom: 10px;
+      color: rgb(0, 0, 0);
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 38px;
+   }
 }

@@ -1,5 +1,14 @@
 //<FORM (a.f+tab)>====================================================================================================
 .form {
+   &-info{
+      min-width: 500px;
+      
+      border: 1px solid red;
+      &__item{
+         border: 1px solid green;
+         display: flex;
+      }      
+   }
 }
 .form-row {
    @include flexbox();
@@ -45,6 +54,12 @@
       padding: 10px 50px;
       font-size: 20px;
    }
+}
+.form__btn{
+   font-size: 16px;
+   padding: 10px 30px;
+   margin: 0 auto;
+   
 }
 //</BUTTONS>====================================================================================================
 
@@ -144,6 +159,7 @@ textarea {
    &.focus {
    }
    &.err {
+      border: 1px solid red;
    }
 }
 textarea.input {
