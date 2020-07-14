@@ -2,10 +2,6 @@
 $(window).scroll(function(event) {
 		var scr=$(this).scrollTop();
 	sectors(scr);
-
-	if($('.__fix-block').length>0){
-		fix_block(scr);
-	}
 });
 function sectors(scr){
 		var w=$(window).outerWidth();
@@ -64,68 +60,13 @@ function sectors(scr){
 	});
 	/*
 	$.each($('.lz').not('.load'), function(index, val) {
-			var th=$(this).outerHeight();
-			var tot=$(this).offset().top;
 			var img=$(this).data('image');
-			var video=$(this).data('video');
-			if(navigator.appVersion.indexOf("Mac")!=-1){
-				var video=$(this).data('videomov');
-			}
 		if(scr>tot-h && scr<tot+th){
-			if(img!='' && img!=null){
-				$(this).html('<img src="'+img+'" alt="" />');
-			}
-			if(video!='' && video!=null){
-				$(this).html('<video loop autoplay playsinline muted src="'+video+'"></video>');
-			}
+			$(this).html('<img src="'+img+'" alt="" />');
 			$(this).addClass('load');
-			$(this).parents('.slick-slider').slick('setPosition');
 		}
 	});
-	ibg();
 	*/
-}
-
-function fix_block(ind,init){
-		let w=$(window).outerWidth();
-		let h=$(window).outerHeight();
-		let h_head=$('header').outerHeight();
-	$.each($('.__fix-block'), function(index, val) {
-			let block=$(this);
-			let item=block.find('.__fix-item');
-		if(item.outerHeight()<h-(h_head+30)){
-			if(scr>block.offset().top-(h_head+15)){
-				item.css({
-					position: 'fixed',
-					bottom:'auto',
-					top:15+h_head,
-					width:block.outerWidth(),
-					left:block.offset().left
-				});
-			}else{
-				gotoRelative(item);
-			}
-			if(scr>(block.outerHeight()+block.offset().top)-(item.outerHeight()+(h_head+15))){
-				block.css({position: 'relative'});
-				item.css({
-					position: 'absolute',
-					top:'auto',
-					bottom:0,
-					left:0
-				});
-			}
-		}else{
-			gotoRelative(item);
-		}
-	});
-	function gotoRelative(item){
-		item.css({
-			position: 'relative',
-			top:0,
-			bottom:'auto',
-			left:0
-		});
-	}
 }
 function dotts(ind,init){
 	if(init==true){
