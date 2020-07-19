@@ -287,3 +287,15 @@ $(window).scroll(function () {
 		$('.header').removeClass('fixed');
 	}
 });
+
+
+
+$(window).resize(function () { 
+	if ($(window).width() < 765 ) {
+		$('.footer__row').addClass('spollers');
+		$('.footer__title').addClass('spoller');
+	} else if ($(window).width() > 765 ){		
+		$('.footer__row').removeClass('spollers');
+		$('.footer__title').removeClass('spoller');
+	}
+});	

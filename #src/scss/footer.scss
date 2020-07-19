@@ -20,10 +20,15 @@
          padding-left: 50px;
       }
       @media (max-width:$md2+px){
-         flex: 0 1 100%;
+         flex: 0 1 50%;
          padding-left: 0px;
          margin: 0px 0px 20px 0px;
 
+      }
+      @media (max-width:$md3+px){
+         flex: 0 1 100%;
+         padding-left: 0px;
+         margin: 0px 0px 20px 0px;
       }
       
    }
@@ -49,8 +54,16 @@
       line-height: 29px;
       margin: 0px 0px 7px 0px;
       color: #fff;
+      cursor: pointer;
    }
    &__nav {
+      @media (min-width:$md3+px){
+         display: block !important;
+      }
+      @media (max-width:$md3+px){
+         display: none;
+      }
+
    }
    &__list {
    }
