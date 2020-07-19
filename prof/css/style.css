@@ -1422,6 +1422,7 @@ body.ie .ibg img {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 16.5%;
           flex: 1 1 16.5%;
+  padding: 0px 0px 30px 30px;
 }
 
 .foto-card {
@@ -1432,6 +1433,10 @@ body.ie .ibg img {
 }
 
 .foto-card_3 {
+  height: 100%;
+}
+
+.foto-card_4 {
   height: 100%;
 }
 
@@ -1680,6 +1685,10 @@ body.ie .ibg img {
     padding: 0px 0px 15px 15px;
   }
 
+  .foto-column_4 {
+    padding: 0px 0px 15px 15px;
+  }
+
   .foto-column {
     padding-left: 15px;
   }
@@ -1802,6 +1811,10 @@ body.ie .ibg img {
   }
 
   .foto-column_3 {
+    padding: 0px 0px 10px 10px;
+  }
+
+  .foto-column_4 {
     padding: 0px 0px 10px 10px;
   }
 
