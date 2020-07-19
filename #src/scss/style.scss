@@ -378,12 +378,12 @@ body {
       }
       &_4 {
          flex: 1 1 16.5%;
-         padding: 0px 0px 30px 30px;
+         // padding: 0px 0px 30px 30px;
          @media (max-width: $md2+px) {
-            padding: 0px 0px 15px 15px;
+            // padding: 0px 0px 15px 15px;   
          }
          @media (max-width: $md3+px) {
-            padding: 0px 0px 10px 10px;
+            // padding: 0px 0px 10px 10px;
          }
       }
       @media (max-width: $md2+px) {
@@ -497,21 +497,19 @@ body {
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 .info {
    padding: 110px 60px;
-   height: 500px;
    &__row {
       display: flex;
    }
    &__column_1 {
-      flex: 0 0 200px;
+      flex: 0 0 264px;
    }
    &__title {
-      margin-bottom: 20px;
       font-family: Raleway;
+      font-style: normal;
       font-weight: 600;
-      font-size: 25px;
-      // line-height: 29px;
-      margin: 0px 0px 7px 0px;
-      color: rgb(0, 0, 0);
+      font-size: 30px;
+      line-height: 130%;
+      margin-bottom: 28px;
    }
    &__nav {
    }
@@ -525,7 +523,6 @@ body {
       line-height: 38px;
    }
    &__link {
-    
    }
    &__items {
    }

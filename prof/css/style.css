@@ -1422,7 +1422,6 @@ body.ie .ibg img {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 16.5%;
           flex: 1 1 16.5%;
-  padding: 0px 0px 30px 30px;
 }
 
 .foto-card {
@@ -1507,7 +1506,6 @@ body.ie .ibg img {
 
 .info {
   padding: 110px 60px;
-  height: 500px;
 }
 
 .info__row {
@@ -1518,17 +1516,17 @@ body.ie .ibg img {
 
 .info__column_1 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 200px;
-          flex: 0 0 200px;
+      -ms-flex: 0 0 264px;
+          flex: 0 0 264px;
 }
 
 .info__title {
-  margin-bottom: 20px;
   font-family: Raleway;
+  font-style: normal;
   font-weight: 600;
-  font-size: 25px;
-  margin: 0px 0px 7px 0px;
-  color: black;
+  font-size: 30px;
+  line-height: 130%;
+  margin-bottom: 28px;
 }
 
 .info__navitem {
@@ -1682,10 +1680,6 @@ body.ie .ibg img {
     padding: 0px 0px 15px 15px;
   }
 
-  .foto-column_4 {
-    padding: 0px 0px 15px 15px;
-  }
-
   .foto-column {
     padding-left: 15px;
   }
@@ -1808,10 +1802,6 @@ body.ie .ibg img {
   }
 
   .foto-column_3 {
-    padding: 0px 0px 10px 10px;
-  }
-
-  .foto-column_4 {
     padding: 0px 0px 10px 10px;
   }
 
